@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bola de color saltarina</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="scene">
+      <header class="controls">
+        <div>
+          <h1>Bola de color personalizable</h1>
+          <p>
+            Elige un color en hex y presiona la barra espaciadora para hacer que la bola
+            salte. Puedes saltar tantas veces como quieras, incluso en el aire.
+          </p>
+        </div>
+        <label class="color-picker">
+          Color de la bola
+          <input id="ballColor" type="color" value="#ff4d4d" />
+          <span id="colorValue">#ff4d4d</span>
+        </label>
+      </header>
+
+      <section class="world" aria-label="Escenario con montañas">
+        <div class="sky"></div>
+        <div class="mountains">
+          <div class="mountain m1"></div>
+          <div class="mountain m2"></div>
+          <div class="mountain m3"></div>
+        </div>
+        <div class="ground"></div>
+        <div id="ball" class="ball" aria-label="Bola saltarina"></div>
+        <div class="shadow"></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
